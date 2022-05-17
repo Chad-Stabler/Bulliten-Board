@@ -5,9 +5,6 @@ const dataEl = document.getElementById('load');
 
 // let state
 
-
-
-
 async function loadTable() {
     const dataArr = await fetchPosts();
 
