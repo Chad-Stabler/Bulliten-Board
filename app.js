@@ -1,4 +1,5 @@
 // import functions and grab DOM elements
+const dataEl = document.getElementById('load');
 
 // let state
 
