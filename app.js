@@ -9,7 +9,7 @@ async function loadTable() {
     const dataArr = await fetchPosts();
 
     for (let post of dataArr) {
-        const newDiv = renderData(post.id);
+        const newDiv = renderData(post);
         dataEl.append(newDiv);
     }
 

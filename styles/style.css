@@ -67,6 +67,11 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .gutter-right {
     margin-right: 20px;
 }
@@ -75,10 +80,29 @@ header img {
     height: var(--header-height);
 }
 
-p {
-    margin: var(--gutter);
+div {
+    height: 10em;
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
 }
-  
+
+.sticky h2{
+    font-size: 1rem;
+}
+
+.sticky p {
+    font-size: 0.6rem;
+}
+
+.sticky h3 {
+    font-size: .7rem;
+}
+
 footer {
     position: fixed;
     width: 100%;
