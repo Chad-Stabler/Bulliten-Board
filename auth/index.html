@@ -10,11 +10,19 @@
 <body>
     <section id="sign-in">
         <form id="sign-in-form">
-            <label for="email">Email: </label><input type="text" id="email">
-            <label for="password">Password: </label> <input type="text" id="password">
+            <label for="email">Email: </label><input type="text" name="email">
+            <label for="password">Password: </label> <input type="text" name="password">
             <button id="sign-in-btn">Sign In</button>
         </form>
-        
+        <p id="sign-in-error"></p>
+    </section>
+    <section id="sign-up">
+        <form id="sign-up-form">
+            <label for="email">Email: </label><input type="text" name="email">
+            <label for="password">Password: </label> <input type="text" name="password">
+            <button id="sign-up-btn">Sign Up</button>
+        </form>
+        <p id="sign-up-error"></p>
     </section>
     <script type="module" src="./auth.js"></script>
 </body>
