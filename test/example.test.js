@@ -11,7 +11,6 @@ test('renderData for creating a div and populating it with data', async (expect)
     // Set up your arguments and expectations
     const data = await fetchPosts();
     const expected = '<div><h2>Test data</h2><p>This is to test that my data is displaying on the home page correctly</p><h3>Developer</h3></div>';
-    
     //Act 
     // Call the function you're testing and set the result to a const
     const actual = renderData(data[0]);

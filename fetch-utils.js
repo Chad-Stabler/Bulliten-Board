@@ -4,7 +4,7 @@ const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZ
 const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 export async function fetchPosts() {
-    const response = await client.form('posts').select('*');
+    const response = await client.from('posts').select('*');
 
     return response.data;
 }

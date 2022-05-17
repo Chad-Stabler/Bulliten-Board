@@ -5,7 +5,7 @@ export function renderData(id) {
     const contact = document.createElement('h3');
 
     title.textContent = id.title;
-    content.textContent = id.textContent;
+    content.textContent = id.content;
     contact.textContent = id.contact;
 
     newDiv.append(title, content, contact);
