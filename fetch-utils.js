@@ -44,3 +44,9 @@ export async function redirectIfLoggedIn() {
         location.replace('/');
     }
 }
+
+export async function logOutUser() {
+    await client.auth.signOut();
+
+    return (window.location.href = '/');
+}

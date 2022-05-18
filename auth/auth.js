@@ -16,6 +16,7 @@ signInForm.addEventListener('submit', async (e) => {
     if (user) {
         location.replace('/');
     }
+    signInForm.reset();
 });
 
 signUpForm.addEventListener('submit', async (e) => {
@@ -28,4 +29,5 @@ signUpForm.addEventListener('submit', async (e) => {
     if (user) {
         location.replace('/');
     }
+    signUpForm.reset();
 });
