@@ -5,6 +5,7 @@ const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let signInErrorMsg = document.getElementById('sign-in-error');
 let signUpErrorMsg = document.getElementById('sign-up-error');
+let createErrorMsg = document.getElementById('create-error');
 
 export function getUser() {
     return client.auth.session() && client.auth.session().user;
@@ -19,7 +20,7 @@ export async function checkAuth() {
     const user = getUser();
 
     if (!user) {
-        location.replace('./auth');
+        location.replace('../auth');
     }
 }
 
@@ -49,4 +50,12 @@ export async function logOutUser() {
     await client.auth.signOut();
 
     return (window.location.href = '/');
+}
+
+export async function createPost(post) {
+    const response = await client.from('posts').insert(post);
+
+    if (response.data) {
+        return response.data;
+    } else createErrorMsg.textContent = response.error.message;
 }
