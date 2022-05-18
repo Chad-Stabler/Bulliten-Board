@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(37, 26, 26);
 }
 
 main {
@@ -70,13 +70,14 @@ section {
 }
 
 #load {
-    background-image: '../assets/bulletin-bg.jpeg';
+    background-image: url('../assets/bulletin-bg.jpeg');
+    border: 3px solid olive;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--color3);
+    background-color: rgba(168, 43, 43, 0.45);
     height: var(--header-height);
     box-shadow: var(--shadow);
     padding: 5px;
@@ -121,7 +122,11 @@ div {
 }
 
 .sticky {
-    margin: 5px 5px;
+    margin: 8px 8px;
+    background-color: rgb(73, 74, 131);
+    color: rgb(180, 228, 117);
+    box-shadow: .48em 0 0.2em rgba(37, 15, 15, 0.6);
+    margin: 10px 15px;
 }
 
 #load {
