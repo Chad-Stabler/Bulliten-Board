@@ -149,6 +149,7 @@ footer {
 form {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 #sign-in {
@@ -169,4 +170,17 @@ input {
 
 label {
     margin: 5px 5px;
+}
+
+#create-form {
+    background-color: rgba(121, 56, 141, 0.35);
+    border-radius: 3px;
+    margin: 10px;
+    color: rgb(147, 157, 165);
+}
+
+#create-form button {
+    background-color: black;
+    color: rgb(30, 124, 124);
+    border: none;
 }
