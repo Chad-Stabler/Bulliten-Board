@@ -115,6 +115,7 @@ div {
 
 .sticky p {
     font-size: 0.6rem;
+    overflow: scroll;
 }
 
 .sticky h3 {
