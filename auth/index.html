@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <title>Authentication</title>
+</head>
+<body>
+    <section id="sign-in">
+        <h2>Sign In:</h2>
+        <form id="sign-in-form">
+            <label for="email">Email: </label><input type="email" name="email">
+            <label for="password">Password: </label> <input type="password" name="password">
+            <button id="sign-in-btn">Sign In</button>
+        </form>
+        <p id="sign-in-error"></p>
+    </section>
+    <section id="sign-up">
+        <h2>Sign Up:</h2>
+        <form id="sign-up-form">
+            <label for="email">Email: </label><input type="email" name="email">
+            <label for="password">Password: </label> <input type="password" name="password">
+            <button id="sign-up-btn">Sign Up</button>
+        </form>
+        <p id="sign-up-error"></p>
+    </section>
+    <script type="module" src="./auth.js"></script>
+</body>
+</html>

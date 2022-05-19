@@ -28,7 +28,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: rgb(37, 26, 26);
 }
 
 main {
@@ -39,8 +39,24 @@ main {
     margin-bottom: calc(var(--footer-height));
 }
 
+.links a {
+    margin: 10px 10px;
+    background-color: black;
+    color: rgb(30, 124, 124);
+    border-radius: 3px;
+    padding: 10px 5px;
+} 
+
+.links button {
+    margin: 10px 10px;
+    background-color: black;
+    color: rgb(30, 124, 124);
+    border-radius: 3px;
+    padding: 10px 5px;
+}
+
 section {
-    background-color: var(--color5);
+    background-color: rgb(37, 37, 20);
     max-width: 80%;
     display: flex;
     flex-direction: column;
@@ -50,15 +66,21 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px blueviolet;
+}
+
+#load {
+    background-image: url('../assets/bulletin-bg.jpeg');
+    border: 3px solid olive;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
+    justify-content: space-between;
+    background-color: rgba(168, 43, 43, 0.45);
     height: var(--header-height);
     box-shadow: var(--shadow);
+    padding: 5px;
 }
 
 
@@ -67,18 +89,53 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
 .gutter-right {
     margin-right: 20px;
 }
 
-header img {
-    height: var(--header-height);
+div {
+    height: 10em;
+    width: 10em;
+    border: 1px solid black;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
 }
 
-p {
-    margin: var(--gutter);
+.sticky h2{
+    font-size: 1rem;
 }
-  
+
+.sticky p {
+    font-size: 0.6rem;
+    overflow: scroll;
+}
+
+.sticky h3 {
+    font-size: .7rem;
+}
+
+.sticky {
+    margin: 8px 8px;
+    background-color: rgb(73, 74, 131);
+    color: rgb(180, 228, 117);
+    box-shadow: .48em 0 0.2em rgba(37, 15, 15, 0.6);
+    margin: 10px 15px;
+}
+
+#load {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 footer {
     position: fixed;
     width: 100%;
@@ -88,4 +145,43 @@ footer {
     justify-content: flex-end;
     background-color: var(--color3);
     box-shadow: var(--shadow);
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#sign-in {
+    color:rgb(84, 126, 180);
+}
+
+#sign-up {
+    color:rgb(84, 126, 180);
+}
+
+button {
+    margin: 5px 5px;
+}
+
+input {
+    margin: 5px 5px;
+}
+
+label {
+    margin: 5px 5px;
+}
+
+#create-form {
+    background-color: rgba(121, 56, 141, 0.35);
+    border-radius: 3px;
+    margin: 10px;
+    color: rgb(147, 157, 165);
+}
+
+#create-form button {
+    background-color: black;
+    color: rgb(30, 124, 124);
+    border: none;
 }
